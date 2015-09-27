@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<html>
+    <head>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static "css/digitalnomads.css" %}">
+        <title>REMOTEWORKPLACES!!</title>
+    </head>
+    <body>
+
+    <div>
+         <h1><a href="/">Digital nomads</a></h1>
+    </div>
+
+    {% for place in places %}
+
+       <div>
+           <h1><a href="">{{ place.title }}</a></h1>
+            <p>{{ place.text|linebreaks }}</p>
+            <p><img src={{ place.image }} /></p>
+       </div>
+    {% endfor %}
+  </body>
+</html>
+
+
+
+  
