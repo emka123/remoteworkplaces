@@ -2,11 +2,21 @@ body {
 	background: url('../../static/photos/remotework-main.jpg'); 
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	
 }
 
-
-
-html {
-	padding-left: 100px;
+.medium {
+   text-align:center;
+   width:100px;
+   height:40px;
+   padding-top:40px;
+   padding-bottom:20px;
+   margin:20px;
+   border-radius:50%;
+   float:right;
 }
+
+.color1 {
+	background:#617B18;
+} 
