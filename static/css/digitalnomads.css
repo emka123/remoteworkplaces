@@ -1,22 +1,123 @@
 body {
-	background: url('../../static/photos/remotework-main.jpg'); 
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	
+   background: url('../../static/photos/remotework-main.jpg'); 
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   
 }
+
+
+
+
+.jumbotron {
+    background-color: transparent;
+    text-align: center;
+    top: 40px;
+}
+
+.jumbotron h1 {
+    color: #CEC5AC;
+    font-size: 50px;
+    text-shadow: 0 2px 3px rgba(0,0,0,.4);
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
 
 .medium {
    text-align:center;
-   width:100px;
-   height:40px;
+   width:130px;
+   height:130px;
    padding-top:40px;
    padding-bottom:20px;
    margin:20px;
    border-radius:50%;
-   float:right;
+   margin-top: 5px;
+
 }
 
 .color1 {
-	background:#617B18;
+   background-color: #152125;
 } 
+
+.glyphicon-search {
+   font-size: 60px;
+   top: -6px;
+   color: #CEC5AC;
+}
+
+.glyphicon-book {
+   font-size: 60px;
+   top: -6px;
+   color: #CEC5AC;
+}
+
+.glyphicon-comment {
+   font-size: 60px;
+   top: -6px;
+   color: #CEC5AC;
+}
+
+.center-block {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.navbar-default {
+  background-image: linear-gradient(to bottom,#CEC5AC 0,#F8F8F8 100%); 
+  font-color: #152125;
+  border-color: transparent;
+  border-radius: 0px;
+
+}
+
+.navbar {
+  border-radius: 0px;
+  border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #152125;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+
+}
+
+.navbar-default .navbar-brand {
+  color: #152125;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.properties {
+  margin: -10px 0 0 0;
+ 
+
+}
+
+.properties h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-color: #152125;
+  font-weight: bold;
+
+
+}
+
+body {
+  color:#CEC5AC;
+}
+
+p {
+  margin-top: 50px;
+  font-size: 16px;
+  width: 200px;
+  text-align: center;
+  margin: 40px 0 0 -35px;
+  
+}
