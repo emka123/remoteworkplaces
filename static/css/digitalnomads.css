@@ -7,8 +7,6 @@ body {
 }
 
 
-
-
 .jumbotron {
     background-color: transparent;
     text-align: center;
@@ -66,16 +64,19 @@ body {
 }
 
 .navbar-default {
-  background-image: linear-gradient(to bottom,#CEC5AC 0,#F8F8F8 100%); 
+  background-image: none;
+  background-color: #E0DACB; 
   font-color: #152125;
   border-color: transparent;
   border-radius: 0px;
+
 
 }
 
 .navbar {
   border-radius: 0px;
   border: none;
+
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -83,6 +84,8 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
+
+
 
 
 }
@@ -121,3 +124,12 @@ p {
   margin: 40px 0 0 -35px;
   
 }
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #978E9D;
+  cursor: pointer;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  
+}
+
