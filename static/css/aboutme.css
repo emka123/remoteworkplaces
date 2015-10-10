@@ -1,0 +1,56 @@
+body {
+  background-color: #B1ADA7;
+}
+
+
+.navbar-default {
+  background-image: none;
+  background-color: #E0DACB; 
+  font-color: #152125;
+  border-color: transparent;
+  border-radius: 0px;
+
+
+}
+
+.navbar {
+  border-radius: 0px;
+  border: none;
+
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #152125;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.navbar-default .navbar-brand {
+  color: #152125;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #978E9D;
+  cursor: pointer;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  
+}
+
+.container {
+  width: 1250px;
+
+}
+
+img {
+  width: 45%;
+  float: right;
+  height: auto;
+  
+}

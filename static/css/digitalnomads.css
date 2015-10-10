@@ -1,5 +1,5 @@
 body {
-   background: url('../../static/photos/remotework-main.jpg'); 
+   
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -69,14 +69,12 @@ body {
   font-color: #152125;
   border-color: transparent;
   border-radius: 0px;
-
-
 }
 
 .navbar {
   border-radius: 0px;
   border: none;
-
+  margin-bottom: 0px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -84,10 +82,6 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
-
-
-
-
 }
 
 .navbar-default .navbar-brand {
@@ -98,7 +92,9 @@ body {
 }
 
 .properties {
-  margin: -10px 0 0 0;
+  background: url('../../static/photos/remotework-main.jpg'); 
+  height: 100%;
+
  
 
 }
