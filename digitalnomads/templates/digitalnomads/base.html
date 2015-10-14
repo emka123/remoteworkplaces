@@ -5,9 +5,10 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static "css/digitalnomads.css" %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <title>REMOTEWORKPLACES!!</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".nav navbar-nav navbar-right">
     <section class="navigation">    
       <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -24,9 +25,10 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
                 <li><a href="/about_me" >About me</a></li>
-                <li><a href="#">About site</a></li>
+                <li><a href="#about_site" class="scrollto">About site</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cities<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cities
+                    <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="#">Wroclaw</a></li>
                     <li><a href="#">Warszawa</a></li>
@@ -79,18 +81,37 @@
       </div>
     </div>
     </section>  
-    <section class="about_site">
+    <section id="about_site">
     <div class="container">
-      <p>sasasdadsdasdasd
-      asdasdasdasdasda
-      asdasdasdssa
-      dasdasasdsdsdsdsdas
+      <h2>World is changing. More and more people work in other places than f.ex office. But sometimes it's a little problem find a perfect place to work. This site can help You find ideal place to your creative work. Enjoy!</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <p>Sometimes people want work in other place like home or office. It's normal - people don't like feel lonely. In cafe f.ex they have calm and piece, but also - they watch clients, waitress etc. It's more interesting than sit in room. But choose place to remote work isn't easy! Did You know for sure where is WIFI, the right amount of sockets, good atmosphere? Maybe You don't mind about this but it's extremal important.</p>
+          <p>This site presents places in Poland where You can work remotly, with opinion, commentairs other peoples and all necessary information for good choice. Only need you click yours city and choose the best one.</p> 
+        </div>
+      <div class="col-sm-6">
+         <img src="../../static/photos/about_site1.jpg">
+        <img src="../../static/photos/about_site2.jpg">
+      </div>
+      </div>
+    </div>
 
-      asdasdasa
-      asdasdassddaas
-      asddsasss
-      asa</p>
   </section> 
+  <section id="places">
+  <div>
+         <h1><a href="/">Digital nomads</a></h1>
+    </div>
+
+    {% for place in places %}
+
+       <div>
+           <h1><a href="">{{ place.title }}</a></h1>
+            <p>{{ place.text|linebreaks }}</p>
+            <p><img src={{ place.image }} /></p>
+       </div>
+
+    {% endfor %}
+
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 </html>
