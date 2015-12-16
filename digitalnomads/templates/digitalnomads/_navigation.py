@@ -12,7 +12,7 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/#">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
             <li><a href="/about_me" target="_blank">About me</a></li>
             <li><a href="#">About site</a></li>
             <li class="dropdown">
