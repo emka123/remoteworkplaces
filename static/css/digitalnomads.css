@@ -2,6 +2,34 @@ body {
   position: relative;
 }
 
+.navbar-default {
+  background-image: none;
+  background-color: #E0DACB; 
+  font-color: #152125;
+  border-color: transparent;
+  border-radius: 0px;
+}
+
+.navbar {
+  border-radius: 0px;
+  border: none;
+  margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #152125;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+  color: #152125;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .jumbotron {
     background-color: transparent;
     text-align: center;
@@ -16,9 +44,6 @@ body {
     font-weight: bold;
 }
 
-
-
-
 .medium {
    text-align:center;
    width:130px;
@@ -28,8 +53,6 @@ body {
    margin:20px;
    border-radius:50%;
    margin-top: 5px;
-
-
 }
 
 .medium:hover {
@@ -47,8 +70,6 @@ body {
    top: -6px;
    color: #CEC5AC;
    z-index: 1;
-  
-
 }
 
 .glyphicon-book {
@@ -80,33 +101,7 @@ body {
 
 
 
-.navbar-default {
-  background-image: none;
-  background-color: #E0DACB; 
-  font-color: #152125;
-  border-color: transparent;
-  border-radius: 0px;
-}
 
-.navbar {
-  border-radius: 0px;
-  border: none;
-  margin-bottom: 0px;
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: #152125;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.navbar-default .navbar-brand {
-  color: #152125;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
 
 .properties {
   background: url('../../static/photos/remotework-main.jpg'); 
