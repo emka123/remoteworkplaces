@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static "css/digitalnomads.css" %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <title>REMOTEWORKPLACES!!</title>
   </head>
   <body data-spy="scroll" data-target=".nav navbar-nav navbar-right">
@@ -52,86 +53,71 @@
         </div>          
       </nav>
     </div>
-    <section class="properties">
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Find Your Favorite</br> Remote Work Places!</h1>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h1>Search</h1>
-            <div class="medium color1 center-block">
-              <i class="glyphicon glyphicon-search"></i>
-              <p>Browse places and choose the perfect one</p>
+    <div id="properties">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Find Your Favorite</br> Remote Work Places!</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <h1>Search</h1>
+              <div class="medium color1 center-block">
+                <i class="glyphicon glyphicon-search"></i>
+                <p>Browse places and choose the perfect one</p>
+              </div>
             </div>
-        </div>
-        <div class="col-md-4">
-           <h1>Read</h1>
-          <div class="medium color1 center-block">
-            <i class="glyphicon glyphicon-book"></i>
-            <p>Explore the descriptions of interesting places</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-           <h1>Comment</h1>
-          <div class="medium color1 center-block">
-            <i class="glyphicon glyphicon-comment"></i>
-            <p>Write what you think and share your opinions!</p>
+            <div class="col-md-4">
+              <h1>Read</h1>
+              <div class="medium color1 center-block">
+                <i class="glyphicon glyphicon-book"></i>
+                <p>Explore the descriptions of interesting places</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h1>Comment</h1>
+              <div class="medium color1 center-block">
+                <i class="glyphicon glyphicon-comment"></i>
+                <p>Write what you think and share your opinions!</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </section>  
-    <section id="about_site">
+    <div id="about_site">
+      <div class="container">
+        <h2>World is changing. More and more people work in other places than f.ex office. But sometimes it's a little problem find a perfect place to work. This site can help You find ideal place to your creative work. Enjoy!</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>Sometimes people want work in other place like home or office. It's normal - people don't like feel lonely. In cafe f.ex they have calm and piece, but also - they watch clients, waitress etc. It's more interesting than sit in room. But choose place to remote work isn't easy! Did You know for sure where is WIFI, the right amount of sockets, good atmosphere? Maybe You don't mind about this but it's extremal important.</p>
+            <p>This site presents places in Poland where You can work remotly, with opinion, commentairs other peoples and all necessary information for good choice. Only need you click yours city and choose the best one.</p> 
+          </div>
+          <div class="col-sm-6">
+            <img src="../../static/photos/about_site1.jpg">
+            <img src="../../static/photos/about_site2.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="set-7">
+      <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
+        <a href="#set-7" class="hi-icon hi-icon-cog">Settings</a>
+      </div>
+    </div>
+    <div id="places">
+      <div class="page_header">
+        <h1>Places for remotly work</h1>
+      </div>
+    </div>
     <div class="container">
-      <h2>World is changing. More and more people work in other places than f.ex office. But sometimes it's a little problem find a perfect place to work. This site can help You find ideal place to your creative work. Enjoy!</h2>
       <div class="row">
-        <div class="col-sm-6">
-          <p>Sometimes people want work in other place like home or office. It's normal - people don't like feel lonely. In cafe f.ex they have calm and piece, but also - they watch clients, waitress etc. It's more interesting than sit in room. But choose place to remote work isn't easy! Did You know for sure where is WIFI, the right amount of sockets, good atmosphere? Maybe You don't mind about this but it's extremal important.</p>
-          <p>This site presents places in Poland where You can work remotly, with opinion, commentairs other peoples and all necessary information for good choice. Only need you click yours city and choose the best one.</p> 
-        </div>
-      <div class="col-sm-6">
-         <img src="../../static/photos/about_site1.jpg">
-        <img src="../../static/photos/about_site2.jpg">
-      </div>
+        {% for place in places %}
+          <div class="col-md-4">
+            <h1><a href="">{{ place.title }}</a></h1>
+            <p><img src={{ place.image }} /></p>
+          </div>
+        {% endfor %}
       </div>
     </div>
-
-  </section>
-
-
-  <section id="set-7">
-    
-    <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
-      <a href="#set-7" class="hi-icon hi-icon-cog">Settings</a>
-   
-    </div>
-  </section>
-
-
-
- 
-  <section id="places">
-  <div class="page_header">
-    <h1>Places for remotly work</h1>
-  </div>
-  <div class="container">
-    <div class="row">
-      
-      {% for place in places %}
-        <div class="col-md-4">
-          <h1><a href="">{{ place.title }}</a></h1>
-          <p>{{ place.text|linebreaks }}</p>
-          <p><img src={{ place.image }} /></p>
-        </div>
-
-      {% endfor %}
-      </div>
-    </div>
-  
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
   

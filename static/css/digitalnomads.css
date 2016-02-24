@@ -56,10 +56,10 @@ body {
 }
 
 .medium:hover {
--webkit-transform: scale(1.15);
-        -ms-transform: scale(1.15);
-        transform: scale(1.15);
-      }
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+}
 
 .color1 {
    background-color: #152125;
@@ -103,7 +103,7 @@ body {
 
 
 
-.properties {
+#properties {
   background: url('../../static/photos/remotework-main.jpg'); 
   height: 100%;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body {
   background-size: cover;
 }
 
-.properties h1 {
+#properties h1 {
   text-align: center;
   text-transform: uppercase;
   font-color: #152125;
@@ -127,7 +127,7 @@ p {
   font-size: 200px;
 }
 
-.properties p {
+#properties p {
   margin-top: 50px;
   font-size: 16px;
   width: 200px;
@@ -180,10 +180,9 @@ p {
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
-
 }
 
- a {
+a {
   color: #152125;
   font-family: "Open Sans",Helvetica,Arial,sans-serif;
   text-align: center;
@@ -221,7 +220,7 @@ p {
 
 
 
- .hi-icon-wrap {
+.hi-icon-wrap {
   text-align: center;
   margin: 0 auto;
   padding: 2em 0 3em;
