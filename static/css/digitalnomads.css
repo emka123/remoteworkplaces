@@ -103,7 +103,7 @@ body {
 
 
 
-#properties {
+.properties {
   background: url('../../static/photos/remotework-main.jpg'); 
   height: 100%;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body {
   background-size: cover;
 }
 
-#properties h1 {
+.properties h1 {
   text-align: center;
   text-transform: uppercase;
   font-color: #152125;
@@ -127,7 +127,7 @@ p {
   font-size: 200px;
 }
 
-#properties p {
+.properties p {
   margin-top: 50px;
   font-size: 16px;
   width: 200px;
@@ -143,12 +143,12 @@ p {
   transition: color 1s;
 }
 
-#about_site {
+.about_site {
   background-color: #E0DACB;
   height: 600px;
 }
 
-#about_site h2 {
+.about_site h2 {
   color: #152125;
   font-family: "Open Sans",Helvetica,Arial,sans-serif;
   text-align: center;
@@ -189,17 +189,17 @@ a {
   font-size: 30px;
 }
 
-#places img {
+.places img {
   width: 70%;
 }
 
-#places .col-md-4 p {
+.places .col-md-4 p {
   color: #152125;
   font-family: "Open Sans",Helvetica,Arial,sans-serif;
 
 }
 
-#places .col-md-4  {
+.places .col-md-4  {
   text-align: center;
 
 }
@@ -210,7 +210,7 @@ a {
   margin-bottom: 20px;
 }
 
-#places p {
+.places p {
   font-size: 10px;
 }
 
