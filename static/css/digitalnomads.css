@@ -104,7 +104,6 @@ body {
   font-color: #152125;
   font-weight: bold;
   font-family: "Open Sans",Helvetica,Arial,sans-serif;
-  margin-bottom: 60px;
 }
 
 body {
@@ -126,6 +125,10 @@ p {
 
 .properties .row {
   margin-top: 60px;
+}
+
+.margin: {
+  margin-bottom: 60px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
