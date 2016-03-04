@@ -109,17 +109,17 @@
       <div class="page_header">
         <h1>Places for remotely work</h1>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        {% for place in places %}
+      <div class="container">
+        <div class="row">
+          {% for place in places %}
           <div class="col-md-4">
-            <h1><a href="">{{ place.title }}</a></h1>
+            <h1><a href="{% url 'place_detail' pk=place.pk %}">{{ place.title }}</a></h1>
             <p><img src={{ place.image }} /></p>
           </div>
-        {% endfor %}
+          {% endfor %}
       </div>
     </div>
+  </div>
   </body>
 </html>
   
