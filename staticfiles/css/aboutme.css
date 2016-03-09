@@ -2,21 +2,17 @@ body {
   background-color: #B1ADA7;
 }
 
-
 .navbar-default {
   background-image: none;
   background-color: #E0DACB; 
   font-color: #152125;
   border-color: transparent;
   border-radius: 0px;
-
-
 }
 
 .navbar {
   border-radius: 0px;
   border: none;
-
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -32,29 +28,19 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
-
 }
 
 .navbar-default .navbar-nav>li>a:hover {
   color: #978E9D;
   cursor: pointer;
   -webkit-transition: color 1s;
-  transition: color 1s;
-  
+  transition: color 1s;  
 }
-
-
 
 img {
   width: 60%;
-  margin: 10px 0 0 85px;
-  
-  
- 
-
+  margin: 10px 0 0 85px; 
 }
-
-
 
 .svg-wrapper {
   margin: 0 0 0 100px;
@@ -67,10 +53,8 @@ img {
   stroke-dashoffset: -403;
   stroke-width: 6px;
   stroke: black;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-  
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;  
 }
-
 
 .text {
   color: black;
@@ -82,9 +66,6 @@ img {
   top: -48px;
   text-transform: uppercase;
   padding-left:15px;
-  
-
-
 }
 
 .svg-wrapper:hover .shape {
@@ -94,20 +75,12 @@ img {
 }
 
 .about p {
-
   margin-top: 30px;
   font-family: "Open Sans",Helvetica,Arial,sans-serif;
-
   font-size: 18px;
   letter-spacing: 5px;
   line-height: 20px;
 }
-
-
-
-
-
-
 
 ol, ul {
   list-style: none;
@@ -132,7 +105,6 @@ a:hover {
 .wraper{
   width:470px;
   margin:150px auto;
-
 }
 
 .wraper:before,
@@ -145,60 +117,3 @@ a:hover {
   clear: both;
 }
 
-
-
-.skillst9{
-  width:100%;
-  color:#34495e;
-}
-.skillst9 .skillbar{
-  width: 100%;
-  height: 16px;
-  padding:5px;
-  box-sizing:border-box;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  margin-bottom:30px;
-  position:relative;
-  background-color: #363636;
-}
-.skillst9 .skillbar .count-bar{
-  width: 100%;
-  height: 6px;
-  width:0px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background-color: #15ad9e;
-}
-.skillst9 .title{
-  position:absolute;
-  font-size:14px;
-  font-weight:400;
-  padding-left:5px;
-  line-height:25px;
-  top:-25px;
-  left:0;
-  text-transform:uppercase;
-}
-.skillst9 .count{
-  position:absolute;
-  top:0;
-  right:12px;
-  line-height:16px;
-  font-weight:400;
-  color: #fdfdfd;
-  font-size: 9px;
-}
-
-
-
-  
-}
