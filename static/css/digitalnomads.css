@@ -106,6 +106,14 @@ body {
   font-family: "Open Sans",Helvetica,Arial,sans-serif;
 }
 
+#properties  h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-color: #152125;
+  font-weight: bold;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+
 body {
   color:#CEC5AC;
 }
@@ -149,9 +157,10 @@ p {
   text-align: center;
   line-height: 40px;
   font-size: 30px;
+
 }
 
-.col-sm-6 p {
+.col-md-6 p {
   margin-top: 50px;  
   color: #152125;
   font-family: "Open Sans",Helvetica,Arial,sans-serif;
@@ -162,7 +171,7 @@ p {
   height: 20%;
 }
 
-.col-sm-6 img {
+.col-md-6 img {
   width: 48%;
   margin-top: 60px;
   margin-right: 6px;
@@ -208,7 +217,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   #properties {
-    height: 1400px;
+    height: 1300px;
   } 
 
   #properties h1 {
@@ -216,15 +225,20 @@ a {
     padding-top: 30px;
     line-height: 50px;
     margin-top: 0px;
-    padding-top: 90px;
   }
+
+  #properties h2 {
+    margin-bottom: 10px;
+    margin-top: 110px;
+  }
+
 
   #properties p {
     font-size: 19px;
   }
 
-  #properties .col-md-4 {
-
+  #about_site {
+    height: 1300px;
   }
    
 }
