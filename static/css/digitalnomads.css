@@ -161,7 +161,7 @@ p {
 }
 
 .col-md-6 p {
-  margin-top: 50px;  
+ 
   color: #152125;
   font-family: "Open Sans",Helvetica,Arial,sans-serif;
   text-align: justify;
@@ -217,19 +217,23 @@ a {
 
 @media only screen and (max-width: 768px) {
   #properties {
-    height: 1300px;
+    height: 1250px;
   } 
 
   #properties h1 {
-    font-size: 36px;
+    font-size: 32px;
     padding-top: 30px;
     line-height: 50px;
     margin-top: 0px;
   }
 
-  #properties h2 {
+  .with_margin {
     margin-bottom: 10px;
-    margin-top: 110px;
+    margin-top: 125px;
+  }
+
+  .without_margin {
+    margin-top: 0
   }
 
 
@@ -240,9 +244,23 @@ a {
   #about_site {
     height: 1300px;
   }
+
+
+
+   .margin {
+    margin-top: 60px;
+    margin-bottom: 0px;
+  }
+
+
+
    
 }
 
 @media only screen and (min-width: 768px) {
+
+    .col-md-6 p {
+      margin-top: 50px;
+  }
  
 }
