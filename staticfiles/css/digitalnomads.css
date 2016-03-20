@@ -168,7 +168,7 @@ p {
    position: center;
   font-size: 16px;
   width: 100%;
-  height: 20%;
+ 
 }
 
 .col-md-6 img {
@@ -245,22 +245,20 @@ a {
     height: 1300px;
   }
 
-
-
    .margin {
     margin-top: 60px;
     margin-bottom: 0px;
   }
 
-
-
-   
+  .col-md-6 p {
+    height: 0px;  
 }
 
 @media only screen and (min-width: 768px) {
 
     .col-md-6 p {
       margin-top: 50px;
+      height: 20%; 
   }
  
 }
